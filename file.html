@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="file.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <img src="WhatsApp Image 2025-02-07 at 15.51.20_f68d28e0.jpg" alt="Your Logo">
+      <h1>𝒜𝓊𝑔𝓊𝓈𝓉𝒾𝓃 𝒥𝑒𝒷𝒶 𝒦𝓊𝓂𝒶𝓇 𝐸</h1>
+    </div>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#assignments">Assignments</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="glitch" data-text="Hello, I'm 𝒜𝓊𝑔𝓊𝓈𝓉𝒾𝓃 ">Hello, I'm 𝒜𝓊𝑔𝓊𝓈𝓉𝒾𝓃 </h1>
+        <p class="subtitle">Forge Intern</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-container">
+          <img src="WhatsApp Image 2025-02-07 at 15.51.20_f68d28e0.jpg" alt="Your Profile Picture">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#projects">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div>
+          <span class="scroll-text">Scroll Down</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <p>Here are some of my recent works</p>
+    </div>
+    <div class="projects-container">
+      <div class="project-card" data-id="project1">
+        <div class="project-image">
+          <img src="tesla-coil-wireless-transmission-diy-kit-stepstodo-original-imaf6ykzszbhccqh (1).webp" alt="Project 1">
+        </div>
+        <div class="project-info">
+          <h3>Project One</h3>
+          <p>Wireless Electricity</p>
+         <a href="https://drive.google.com/file/d/1ljsdqUq_-S6CLvlQ_SUX-d-lRzGwQEan/view?usp=drive_link" class="view-project">View Details </a>
+         
+        </div>
+      </div>
+      <div class="project-card" data-id="project2">
+        <div class="project-image">
+          <img src="Solar-Mobile-Charger_750x.webp" alt="Project 2">
+        </div>
+        <div class="project-info">
+          <h3>Project Two</h3>
+          <p>Solar PowerBank</p>
+          <a href="https://drive.google.com/file/d/10ZZCG6cVs_70UPcAe3WZsGLm741xFAHj/view?usp=drive_link" class="view-project">View Details </a>
+          
+        </div>
+      </div>
+      <div class="project-card" data-id="project3">
+        <div class="project-image">
+          <img src="1654634918204 (1).png" alt="Project 3">
+        </div>
+        <div class="project-info">
+          <h3>Project Three</h3>
+          <p>Text to Image Generation </p>
+          <a href="https://drive.google.com/file/d/10dFiBrW1k892UClHj4F9c2ip556Mma03/view?usp=sharing" class="view-project">View Details </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Popups -->
+  <div class="popup-overlay" id="project-popup-overlay">
+    <div class="popup-container">
+      <div class="popup-close">&times;</div>
+      <div class="popup-content" id="project1-popup">
+        <h2>Project One</h2>
+        <div class="popup-image">
+          <img src="tesla-coil-wireless-transmission-diy-kit-stepstodo-original-imaf6ykzszbhccqh.webp" alt="Project 1 Detail">
+        </div>
+        <div class="popup-details">
+          <h3>Web Application</h3>
+          <p>This is a detailed description of Project One. It includes information about the technologies used, challenges faced, and solutions implemented.</p>
+          <div class="tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn primary-btn" target="_blank">Live Demo</a>
+            <a href="#" class="btn secondary-btn" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup-content" id="project2-popup">
+        <h2>Project Two</h2>
+        <div class="popup-image">
+          <img src="1654634918204 (1).png" alt="Project 2 Detail">
+        </div>
+        <div class="popup-details">
+          <h3>Mobile App</h3>
+          <p>This is a detailed description of Project Two. It includes information about the technologies used, challenges faced, and solutions implemented.</p>
+          <div class="tech-stack">
+            <span>React Native</span>
+            <span>Firebase</span>
+            <span>Redux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn primary-btn" target="_blank">App Store</a>
+            <a href="#" class="btn secondary-btn" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup-content" id="project3-popup">
+        <h2>Project Three</h2>
+        <div class="popup-image">
+          <img src="1654634918204.png?height=400&width=700" alt="Project 3 Detail">
+        </div>
+        <div class="popup-details">
+          <h3>E-commerce Website</h3>
+          <p>This is a detailed description of Project Three. It includes information about the technologies used, challenges faced, and solutions implemented.</p>
+          <div class="tech-stack">
+            <span>Next.js</span>
+            <span>Tailwind CSS</span>
+            <span>MongoDB</span>
+            <span>Stripe</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn primary-btn" target="_blank">Live Demo</a>
+            <a href="#" class="btn secondary-btn" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Assignments Section -->
+  <section id="assignments" class="assignments">
+    <div class="section-header">
+      <h2>My Assignments</h2>
+      <p>Academic and learning projects</p>
+    </div>
+    <div class="assignments-container">
+      <!-- 9 Assignment boxes -->
+      <div class="assignment-card" data-id="assignment1">
+        <div class="assignment-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Assignment 1</h3>
+        <p>Industrial Design & Rapid Prototyping Techniques</p>
+        <a href="https://drive.google.com/file/d/1wCkVhm1Lb9VfdrDr3RHqjBl0d_-4qI41/view?usp=sharing" class="view-project">View Details </a>
+      </div>
+      <div class="assignment-card" data-id="assignment2">
+        <div class="assignment-icon">
+          <i class="fas fa-paint-brush"></i>
+          
+        </div>
+        <h3>Assignment 2</h3>
+        <p>UI/UX Design</p>
+      </div>
+      <div class="assignment-card" data-id="assignment3">
+        <div class="assignment-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>Assignment 3</h3>
+        <p>Database Management</p>
+      </div>
+      <div class="assignment-card" data-id="assignment4">
+        <div class="assignment-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Assignment 4</h3>
+        <p>Mobile App Development</p>
+      </div>
+      <div class="assignment-card" data-id="assignment5">
+        <div class="assignment-icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h3>Assignment 5</h3>
+        <p>Backend Development</p>
+      </div>
+      <div class="assignment-card" data-id="assignment6">
+        <div class="assignment-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Assignment 6</h3>
+        <p>Data Analysis</p>
+      </div>
+      <div class="assignment-card" data-id="assignment7">
+        <div class="assignment-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3>Assignment 7</h3>
+        <p>Machine Learning</p>
+      </div>
+      <div class="assignment-card" data-id="assignment8">
+        <div class="assignment-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Assignment 8</h3>
+        <p>Cybersecurity</p>
+      </div>
+      <div class="assignment-card" data-id="assignment9">
+        <div class="assignment-icon">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <h3>Assignment 9</h3>
+        <p>Cloud Computing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assignment Popups -->
+  <div class="popup-overlay" id="assignment-popup-overlay">
+    <div class="popup-container">
+      <div class="popup-close">&times;</div>
+      <!-- Assignment 1 Popup -->
+      <div class="popup-content" id="assignment1-popup">
+        <h2>Assignment 1: Web Development Basics</h2>
+        <div class="popup-details">
+          <div class="assignment-meta">
+            <p><strong>Course:</strong> Introduction to Web Development</p>
+            <p><strong>Date:</strong> January 2023</p>
+            <p><strong>Grade:</strong> A</p>
+          </div>
+          <h3>Description</h3>
+          <p>This assignment focused on creating a responsive website using HTML, CSS, and JavaScript. The goal was to demonstrate understanding of fundamental web development concepts.</p>
+          <h3>Key Learnings</h3>
+          <ul>
+            <li>Semantic HTML structure</li>
+            <li>CSS Flexbox and Grid layouts</li>
+            <li>JavaScript DOM manipulation</li>
+            <li>Responsive design principles</li>
+          </ul>
+          <div class="assignment-files">
+            <h3>Files & Resources</h3>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-code"></i> Project Files</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-pdf"></i> Documentation</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-link"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Assignment 2 Popup -->
+      <div class="popup-content" id="assignment2-popup">
+        <h2>Assignment 2: UI/UX Design</h2>
+        <div class="popup-details">
+          <div class="assignment-meta">
+            <p><strong>Course:</strong> User Interface Design</p>
+            <p><strong>Date:</strong> February 2023</p>
+            <p><strong>Grade:</strong> A-</p>
+          </div>
+          <h3>Description</h3>
+          <p>This assignment involved creating wireframes and prototypes for a mobile application. The focus was on user experience and interface design principles.</p>
+          <h3>Key Learnings</h3>
+          <ul>
+            <li>User research and personas</li>
+            <li>Wireframing and prototyping</li>
+            <li>Design systems and components</li>
+            <li>Usability testing</li>
+          </ul>
+          <div class="assignment-files">
+            <h3>Files & Resources</h3>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-image"></i> Design Files</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-pdf"></i> Case Study</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-link"></i> Prototype</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional assignment popups would follow the same pattern -->
+      <!-- For brevity, I'm only showing 2 detailed examples, but in a real implementation, all 9 would be created -->
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="section-header">
+      <h2>My Skills</h2>
+      <p>Technologies and tools I work with</p>
+    </div>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <div class="skill-info">
+              <h4>HTML</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill-info">
+              <h4>CSS</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+         
+              </div>
+            </div>
+         
+  
+      
+      <div class="skill-category">
+        <h3>Tools & Others</h3>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-icon"><img src="letter-c_3665923.png" alt=""></div>
+            <div class="skill-info">
+              <h4>C Program</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><img src="Matlab_Logo.png" alt=""></div>
+            <div class="skill-info">
+              <h4>Matlab</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><img src="pcb_2132987.png" alt=""></div>
+            <div class="skill-info">
+              <h4>PCB Design</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="hobbies">
+    <div class="section-header">
+      <h2>My Hobbies</h2>
+      <p>What I enjoy doing in my free time</p>
+    </div>
+    <div class="hobbies-container">
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3>Reading</h3>
+        <p>I especially enjoy reading the Bible, as it brings me peace and guidance in my daily life.</p>
+      </div>
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class="fas fa-hiking"></i>
+        </div>
+        <h3>Coding</h3>
+        <p>"I enjoy coding because it keeps my mind active and enhances my problem-solving skills. Practicing code regularly sharpens my thinking and boosts my creativity.</p>
+      </div>
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class="fas fa-chess"></i>
+        </div>
+        <h3>Music</h3>
+        <p>Music is my escape during stressful or tough times, helping me relax and stay focused. It acts as the best medicine, lifting my mood and making work feel easier.</p>
+      </div>
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class="fas fa-camera"></i>
+        </div>
+        <h3>Playing</h3>
+        <p>Playing cricket helps improve my body fitness and boosts my mental strength. It keeps me active, focused, and refreshed both physically and mentally.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <h2>Contact Me</h2>
+      <p>Let's work together</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Email</h3>
+            <p>augustin162004@example.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Phone</h3>
+            <p>+91 79049 17978</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Location</h3>
+            <p>Tamil Nadu, India</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/augustin-jeba-kumar-e?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/AUGUSTINJEBAKUMARE" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/kumar_jeba83591" target="_blank"><i class="fab fa-twitter"></i></a>
+    
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <img src="WhatsApp Image 2025-02-07 at 15.51.20_f68d28e0.jpg" alt="Your Logo">
+        <h3>Augustin Jeba Kumar E</h3>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/augustin-jeba-kumar-e?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/AUGUSTINJEBAKUMARE" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/kumar_jeba83591" target="_blank"><i class="fab fa-twitter"></i></a>
+       
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Augustin Jeba Kumar E. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="file.js"></script>
+</body>
+</html>
+
